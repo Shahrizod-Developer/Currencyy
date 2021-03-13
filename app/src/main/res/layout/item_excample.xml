@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="20dp"
+    android:padding="10dp"
+    android:backgroundTint="#89EFFB"
+    android:elevation="4dp"
+    android:layout_height="120dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+
+
+            android:id="@+id/data"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textColor="#112283"
+            android:text="07.02.2021"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintHorizontal_bias="0.5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+
+            android:id="@+id/bir"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="10dp"
+            app:layout_constraintHorizontal_bias="0.28"
+            app:layout_constraintVertical_bias="0.1"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:text="1"
+            app:layout_constraintTop_toBottomOf="@id/data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+
+            android:id="@+id/dollar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/bir"
+            android:layout_marginTop="10dp"
+            app:layout_constraintVertical_bias="0.1"
+            app:layout_constraintHorizontal_bias="0.05"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:text="1 Dollar"
+            app:layout_constraintTop_toBottomOf="@id/data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+
+            android:id="@+id/som"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textSize="20sp"
+            app:layout_constraintHorizontal_bias="0.35"
+            android:layout_marginTop="10dp"
+            android:textColor="#3F51B5"
+            android:text="10540.44 so'm"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintTop_toBottomOf="@id/dollar"                        android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+
+            android:id="@+id/text"
+            app:layout_constraintBottom_toBottomOf="@id/som"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/som"
+            android:textSize="20sp"
+            app:layout_constraintHorizontal_bias="0.1"
+            android:textColor="#3F51B5"
+            android:text="so'm"
+            app:layout_constraintTop_toTopOf="@+id/som"                        android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+
+<!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+
+<!--            android:id="@+id/fab"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.05"-->
+<!--            android:backgroundTint="#fff"-->
+<!--            app:borderWidth="2dp"-->
+<!--            android:layout_marginTop="23dp"-->
+<!--            android:src="@drawable/ic_baseline_attach_money_24"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"/>-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+
+<!--            android:id="@+id/cl1"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            app:layout_constraintLeft_toRightOf="@id/fab"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_width="330dp"-->
+<!--            android:layout_height="80dp">-->
+
+
+<!--            <com.github.florent37.expansionpanel.ExpansionHeader-->
+
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:layout_constraintRight_toRightOf="parent"-->
+<!--                app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                app:expansion_toggleOnClick="true"-->
+<!--                android:layout_width="match_parent"-->
+<!--                app:expansion_layout="@id/expansion_layout"-->
+<!--                app:expansion_headerIndicator="@id/headerIndicator"-->
+<!--                android:padding="3dp"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+
+<!--                    <androidx.appcompat.widget.AppCompatImageView-->
+
+<!--                        app:layout_constraintTop_toTopOf="@id/data"-->
+<!--                        app:layout_constraintBottom_toBottomOf="@id/data"-->
+<!--                        app:layout_constraintRight_toRightOf="parent"-->
+<!--                        app:layout_constraintLeft_toRightOf="@id/data"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:id="@+id/headerIndicator"-->
+<!--                        app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp"-->
+<!--                        android:layout_gravity="center_vertical"-->
+<!--                        android:layout_height="wrap_content"/>-->
+
+
+<!--                </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--            </com.github.florent37.expansionpanel.ExpansionHeader>-->
+
+<!--            <com.github.florent37.expansionpanel.ExpansionLayout-->
+
+<!--                app:layout_constraintTop_toBottomOf="@id/cl1"-->
+<!--                app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                app:layout_constraintRight_toRightOf="parent"-->
+<!--                android:id="@+id/expansion_layout"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <EditText-->
+
+<!--                        android:id="@+id/pul"-->
+<!--                        app:layout_constraintTop_toTopOf="parent"-->
+<!--                        app:layout_constraintRight_toRightOf="parent"-->
+<!--                        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                        android:textColor="#579C06"-->
+<!--                        android:hint="Pul birligini kiriting"-->
+<!--                        app:layout_constraintHorizontal_bias="0.1"-->
+<!--                        android:layout_width="150dp"-->
+<!--                        android:layout_height="wrap_content"/>-->
+
+<!--                    <TextView-->
+
+<!--                        android:id="@+id/dol"-->
+<!--                        app:layout_constraintTop_toTopOf="@id/pul"-->
+<!--                        app:layout_constraintRight_toRightOf="parent"-->
+<!--                        app:layout_constraintLeft_toRightOf="@id/pul"-->
+<!--                        app:layout_constraintBottom_toBottomOf="@id/pul"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:text="Dollar"-->
+<!--                        android:textSize="20sp"-->
+<!--                        android:textColor="#579C06"-->
+<!--                        android:layout_height="wrap_content"/>-->
+
+
+<!--                    <EditText-->
+
+<!--                        android:id="@+id/somda"-->
+<!--                        app:layout_constraintTop_toBottomOf="@id/pul"-->
+<!--                        app:layout_constraintRight_toRightOf="parent"-->
+<!--                        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                        android:textColor="#579C06"-->
+<!--                        android:hint="Bu yerda so'm ko'rsatiladi"-->
+<!--                        app:layout_constraintHorizontal_bias="0.1"-->
+<!--                        android:layout_width="150dp"-->
+<!--                        android:layout_height="wrap_content"/>-->
+
+<!--                    <TextView-->
+
+<!--                        android:id="@+id/sum"-->
+<!--                        app:layout_constraintTop_toTopOf="@id/somda"-->
+<!--                        app:layout_constraintRight_toRightOf="parent"-->
+<!--                        app:layout_constraintLeft_toRightOf="@id/somda"-->
+<!--                        app:layout_constraintBottom_toBottomOf="@id/somda"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:text="Dollar"-->
+<!--                        android:textColor="#579C06"-->
+<!--                        android:textSize="20sp"-->
+<!--                        android:layout_height="wrap_content"/>-->
+
+<!--                </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--            </com.github.florent37.expansionpanel.ExpansionLayout>-->
+
+
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+</androidx.cardview.widget.CardView>
